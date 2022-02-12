@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{margin: 0;padding: 0;font-family: 'Poppins';}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: url(/assets/launcher_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container{
+    width: 90%;
+    background: #ffffff30;
+    max-width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 20px;
+    overflow: hidden;
+
+    @media screen and (min-width: 545px){
+        min-height: 600px;
+    }
+
+    @media screen and (max-width: 544px){
+        padding-top: 110%;
+        max-height: 90%;
+    }
+
+}
+
+.logo{
+    grid-area: image;
+    background-position: center;
+    background-image: url(/assets/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin: 20px 20px 0 20px;
+    border-radius: 20px;
+}
+
+.discord,.tg{
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 80px;
+    img{
+        position: relative;
+    }
+}
+
+.tg{grid-area: tg;img{height: 30px;top: 9px;margin-right: 2px;}}
+
+.discord{grid-area: discord;img{height: 25px;top: 6px;margin-right: 5px;}}
+.wrapper{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffffee;
+
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    // grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'image image' 'tg discord';
+
+}
