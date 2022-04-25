@@ -1,30 +1,295 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="main.js"></script>
-    <title>Saikou | Home</title>
-</head>
-<body>
-    <div class="container">
-        <div class="wrapper">
-            <div class="logo"></div>
-            <a href="https://t.me/saikou_app">
-                <div class="tg">
-                    <img src="/assets/telegram-svgrepo-com.svg" alt="telegram" srcset="">
-                    Telegram
-                </div>
+<html lang="en" class="scroll-smooth text-sm md:text-base">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Saikou</title>
+  </head>
+  <body class="font-ambit">
+    <!-- navigation menu -->
+    <nav class="container">
+      <div class="py-12 align-middle">
+        <div class="flex place-content-between items-center">
+          <!-- logo -->
+          <h1 class="text-4xl font-black uppercase">saikou</h1>
+          <!-- links -->
+          <div class="hidden md:flex items-center">
+            <a
+              href="#features"
+              class="ml-9 text-lg hover:border-b-4 hover:border-custom-pink"
+              >Features
             </a>
-            <a href="https://discord.gg/5TXAWTU5qr">
-                <div class="discord">
-                    <img src="/assets/Discord-Logo-White.svg" alt="Discord" srcset="">
-                    Discord
-                </div>
+            <a
+              href="#team"
+              class="ml-9 text-lg hover:border-b-4 hover:border-custom-pink"
+              >Our Team
             </a>
+            <a
+              href="https://github.com/saikou-app/saikou"
+              class="ml-9 text-lg hover:border-b-4 hover:border-custom-pink"
+              >Github Repo
+            </a>
+          </div>
+          <!-- mobile menu -->
+          <a class="md:hidden" href="#footer">
+            <img class="h-8" src="./images/menu-mobile.svg" alt="mobile menu"
+          /></a>
         </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="py-12 align-middle relative">
+      <div class="container">
+        <div
+          class="flex flex-col-reverse place-content-between place-items-center text-center md:flex-row md:text-left"
+        >
+          <div class="md:max-w-xl">
+            <h2 class="text-5xl leading-tight font-black uppercase">
+              It's time to get excited!
+            </h2>
+            <p class="text-lg my-10">
+              Saikou (最高; Sai-kō) literally means the best (in Japanese).
+              Simplistic yet state-of-the-art elegant experience. Stream and
+              download your favourite anime or manga (with deep anilist
+              integration)
+            </p>
+            <!-- join community button -->
+            <a href="https://discord.gg/5TXAWTU5qr"
+              ><button
+                type="button"
+                class="uppercase outline text-lg font-bold px-6 py-4 bg-custom-pink text-white rounded-lg outline-[3px] outline-custom-pink mb-6 md:mr-6 md:mb-0"
+              >
+                Join Community
+              </button></a
+            >
+
+            <!-- download now button -->
+            <a href="https://github.com/saikou-app/saikou/releases">
+              <button
+                type="button"
+                class="uppercase outline text-lg font-bold px-6 py-4 bg-white text-custom-pink outline-[3px] outline-custom-pink rounded-lg"
+              >
+                Download Now
+              </button>
+            </a>
+          </div>
+          <!-- right hero image -->
+          <img src="./images/hero-image.png" alt="hero image" />
+        </div>
+      </div>
+      <svg
+        class="w-full absolute bottom-0 left-0"
+        viewBox="0 0 1512 70"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1512 70H0V0.712891C595.934 52.5825 929.422 52.2749 1512 0.712891V70Z"
+          fill="black"
+        />
+      </svg>
     </div>
-</body>
+
+    <!-- stats section -->
+    <div class="bg-black text-white relative">
+      <div
+        class="container flex flex-col place-items-center text-center max-w-xl py-36"
+      >
+        <h2
+          class="heading-shape text-5xl leading-tight font-black uppercase mb-20"
+        >
+          Open <br />
+          Source
+        </h2>
+        <p class="text-xl">
+          100% safe and secure. Feel free to contribute to the project on
+          Github.
+        </p>
+        <!-- contribute now button -->
+        <a href="https://github.com/saikou-app/saikou">
+          <button
+            type="button"
+            class="uppercase outline text-lg font-bold px-6 py-4 bg-white/30 text-white rounded-lg outline-[3px] outline-white/30 mt-10"
+          >
+            github repo
+          </button>
+        </a>
+        <div class="flex flex-row uppercase w-full justify-between mt-28">
+          <div>
+            <h4 class="text-2xl font-bold mb-1 md:text-4xl">12,000</h4>
+            <h5 class="text-base font-bold md:text-lg">Downloads</h5>
+          </div>
+          <div>
+            <h4 class="text-2xl font-bold mb-1 md:text-4xl">1,200</h4>
+            <h5 class="text-base font-bold md:text-lg">Stars</h5>
+          </div>
+          <div>
+            <h4 class="text-2xl font-bold mb-1 md:text-4xl">1,900</h4>
+            <h5 class="text-base font-bold md:text-lg">Members</h5>
+          </div>
+        </div>
+        <p class="text-xl mt-10 text-white/50">
+          Disclaimer: Don’t attempt to upload Saikou or any of it's forks to
+          playstore. Doing so might lead to legal action or immediate take-down
+          of the app.
+        </p>
+      </div>
+      <svg
+        class="w-full absolute bottom-0 left-0"
+        viewBox="0 0 1512 70"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1512 70H0V0.712891C595.934 52.5825 929.422 52.2749 1512 0.712891V70Z"
+          fill="white"
+        />
+      </svg>
+    </div>
+
+    <!-- features section -->
+    <div id="features" class="relative">
+      <div class="container flex flex-col text-center max-w-xl pt-36">
+        <h2
+          class="heading-shape text-5xl leading-tight font-black uppercase mb-20"
+        >
+          incredibly <br />
+          powerful
+        </h2>
+        <!-- feature block -->
+        <div>
+          <h3 class="text-3xl font-black uppercase mb-6">ad-free experience</h3>
+          <p class="text-xl">
+            No ads, no popups, no data collection. 100% free and open source
+            project.
+          </p>
+          <img class="mt-11 mb-16" src="./images/feature1.png" alt="" />
+        </div>
+        <div>
+          <h3 class="text-3xl font-black uppercase mb-6">multiple sources</h3>
+          <p class="text-xl">
+            Multiple sources (gogo, tenshi, twist etc.) Near to zero chance of
+            down time.
+          </p>
+          <img class="mt-11 mb-16" src="./images/feature2.png" alt="" />
+        </div>
+        <div>
+          <h3 class="text-3xl font-black uppercase mb-6">anilist support</h3>
+          <p class="text-xl">
+            Deep integration and real-time sync with anilist.co. Easily
+            categorise anime and manga based on your current status.
+          </p>
+          <img class="mt-11 mb-16" src="./images/feature3.png" alt="" />
+        </div>
+        <div>
+          <h3 class="text-3xl font-black uppercase mb-6">manga reader</h3>
+          <p class="text-xl">
+            Nearly unlimited amount of content straight from the highly reliable
+            sources (mangabuddy, mangapill, mangasee etc)
+          </p>
+          <img class="mt-11" src="./images/feature4.png" alt="" />
+        </div>
+      </div>
+      <svg
+        class="w-full absolute bottom-0 left-0"
+        viewBox="0 0 1512 70"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1512 70H0V0.712891C595.934 52.5825 929.422 52.2749 1512 0.712891V70Z"
+          fill="black"
+        />
+      </svg>
+    </div>
+
+    <!-- team section -->
+    <div id="team" class="relative bg-black text-white pt-36 pb-44">
+      <div class="container max-w-3xl flex flex-col items-center text-center">
+        <h2 class="text-5xl leading-tight font-black uppercase mb-20">
+          our <br />
+          team
+        </h2>
+        <div
+          class="grid grid-cols-2 gap-20 place-content-center place-items-center md:grid-cols-3"
+        >
+          <div>
+            <img class="inline" src="./images/member0.svg" alt="" />
+            <h5 class="uppercase font-bold text-lg mt-6 mb-2">
+              @vorobyovgabriel
+            </h5>
+            <h6 class="text-xl text-white/70">Founder</h6>
+          </div>
+          <div>
+            <img class="inline" src="./images/member1.svg" alt="" />
+            <h5 class="uppercase font-bold text-lg mt-6 mb-2">@blatzar</h5>
+            <h6 class="text-xl text-white/70">Contributor</h6>
+          </div>
+          <div>
+            <img class="inline" src="./images/member2.svg" alt="" />
+            <h5 class="uppercase font-bold text-lg mt-6 mb-2">
+              @brahmkshatriya
+            </h5>
+            <h6 class="text-xl text-white/70">Maintainer</h6>
+          </div>
+          <div>
+            <img class="inline" src="./images/member3.svg" alt="" />
+            <h5 class="uppercase font-bold text-lg mt-6 mb-2">@jeelpatel231</h5>
+            <h6 class="text-xl text-white/70">Contributor</h6>
+          </div>
+          <div>
+            <img class="inline" src="./images/member4.svg" alt="" />
+            <h5 class="uppercase font-bold text-lg mt-6 mb-2">@billibox</h5>
+            <h6 class="text-xl text-white/70">Contributor</h6>
+          </div>
+          <div>
+            <img class="inline" src="./images/member5.svg" alt="" />
+            <h5 class="uppercase font-bold text-lg mt-6 mb-2">
+              @insanitywanted
+            </h5>
+            <h6 class="text-xl text-white/70">Designer</h6>
+          </div>
+        </div>
+      </div>
+      <svg
+        class="w-full absolute bottom-0 left-0"
+        viewBox="0 0 1512 70"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1512 70H0V0.712891C595.934 52.5825 929.422 52.2749 1512 0.712891V70Z"
+          fill="white"
+        />
+      </svg>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer" class="container flex place-content-between py-20">
+      <!-- footer logo -->
+      <div>
+        <h1 class="text-4xl font-black uppercase mb-2">saikou</h1>
+        <h2 class="text-lg">It’s time to get excited</h2>
+      </div>
+      <div class="flex flex-col md:flex-row">
+        <!-- link column 1 -->
+        <div class="flex flex-col text-lg md:mr-16">
+          <a href="">Legal Mentions</a>
+          <a href="" class="my-4">Terms of Service</a>
+          <a href="">Report an Issue</a>
+        </div>
+        <!-- link column 2 -->
+        <div class="flex flex-col text-lg">
+          <a href="https://discord.gg/5TXAWTU5qr" class="mt-4 mb-4 md:mt-0"
+            >Join Discord</a
+          >
+          <a href="https://github.com/saikou-app/saikou">Github Repo</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
